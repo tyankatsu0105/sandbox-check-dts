@@ -2,29 +2,32 @@
   "name": "@tyankatsu0105/sandbox-check-dts",
   "version": "0.0.0",
   "description": "",
-  "main": "dist/common.js",
-  "module": "dist/esm.js",
-  "types": "dist/index.d.js",
-  "scripts": {
-    "build": "rollup -c"
+  "keywords": [],
+  "homepage": "https://github.com/tyankatsu0105/sandbox-check-dts#readme",
+  "bugs": {
+    "url": "https://github.com/tyankatsu0105/sandbox-check-dts/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tyankatsu0105/sandbox-check-dts.git"
   },
-  "keywords": [],
-  "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.netlify.com/)",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tyankatsu0105/sandbox-check-dts/issues"
+  "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.netlify.com/)",
+  "main": "dist/common.js",
+  "module": "dist/esm.js",
+  "types": "dist/index.d.js",
+  "scripts": {
+    "build": "rollup -c",
+    "release:prepare": "shipjs prepare",
+    "release:trigger": "shipjs trigger"
   },
-  "homepage": "https://github.com/tyankatsu0105/sandbox-check-dts#readme",
   "devDependencies": {
     "@rollup/plugin-typescript": "^4.1.1",
     "@types/node": "^14.0.1",
     "check-dts": "^0.3.0",
     "rollup": "^2.10.0",
     "rollup-plugin-terser": "^5.3.0",
+    "shipjs": "0.19.0",
     "ts-node": "^8.10.1",
     "typescript": "^3.9.2"
   }
